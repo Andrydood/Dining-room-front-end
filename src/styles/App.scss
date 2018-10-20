@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
+
+html, body, #root, main{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+#openingScreen{
+    background-color: #fff;
+    height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#title{
+    h1, h2{
+        font-weight: 300;
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+        padding: 35px;
+        font-size: 50px;
+    }
+    h2{
+        font-size: 23px;
+    }
+}
+
+#dinerSelectorContainer{
+    text-align: center;
+    .dinerSelector{
+        display: inline-block;
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        border-radius: 1px;
+        position: relative;
+        background-color: #fff;
+        background: url('./media/user.png');
+        background-size: 100% 100%;
+        p{
+            color: #fff;
+            background-color: #da3644;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+        }
+
+        &:hover{
+            background-color: #ddd;
+        }
+    }
+}
+
+#menuOverlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
